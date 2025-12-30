@@ -146,6 +146,58 @@
             color: #c33764;
         }
 
+        .certificates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .certificate-card {
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        .cert-icon {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+        }
+
+        .certificate-card h3 {
+            margin: 15px 0;
+            color: #1d2671;
+        }
+
+        .certificate-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .cert-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cert-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(195, 51, 100, 0.4);
+        }
+
        
         footer {
             background-color: #333;
@@ -172,6 +224,7 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
     </nav>
     <section id="about">
@@ -212,6 +265,23 @@
             <div class="project-card">
                 <h3>Learning Projects</h3>
                 <p>Small projects focused on JavaScript logic, C programming, and web basics.</p>
+            </div>
+        </div>
+    </section>
+    <section id="certificates">
+        <h2>Certificates</h2>
+        <div class="certificates">
+            <div class="certificate-card">
+                <div class="cert-icon">📜</div>
+                <h3>Certificate 1</h3>
+                <p>Description of your first certificate or course completion.</p>
+                <a href="Vaibhav ibm certificate c.pdf" target="_blank" class="cert-btn">View Certificate</a>
+            </div>
+            <div class="certificate-card">
+                <div class="cert-icon">🏆</div>
+                <h3>Certificate 2</h3>
+                <p>Description of your second certificate or achievement.</p>
+                <a href="vaibhav ibm certificate web.pdf" target="_blank" class="cert-btn">View Certificate</a>
             </div>
         </div>
     </section>
